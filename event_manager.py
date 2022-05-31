@@ -26,5 +26,5 @@ class EventManager(object):
     def append_event(self, e):
         self.event_pool.append(e)
 
-    def remove_event(self):
-        self.event_pool.pop()
+    def get_event(self):
+        return self.event_pool.pop()
